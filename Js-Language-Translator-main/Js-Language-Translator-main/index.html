@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Language Translator</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+  </head>
+  <body>
+    <div class="contant">
+        <!-- header section starts  -->
+
+<header class="header">
+
+  <div class="header-1">
+
+      <a href="#" class="logo"> <i class="fas fa-book"></i> Book reader </a>
+
+      <form action="" class="search-form">
+          <input type="search" name="" placeholder="search here..." id="search-box">
+          <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-moon"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+      </div>
+
+  </div>
+
+  <div class="header-2">
+      <nav class="navbar">
+          <a href="../../index.html">home</a>
+          <a href="./index.html" >Translator</a>
+          <a href="../../book.html">reader</a>
+          <a href="../../index.html#arrivals">arrivals</a>
+          <a href="../../index.html#reviews">reviews</a>
+          <a href="../../index.html#blogs">blogs</a>
+      </nav>
+  </div>
+
+     </header>
+    </div>
+
+    <div class="mode">
+      <label class="toggle" for="dark-mode-btn">
+        <div class="toggle-track">
+          <input type="checkbox" class="toggle-checkbox" id="dark-mode-btn" />
+          <span class="toggle-thumb"></span>
+          <img src="images/sun.png" alt="" />
+          <img src="images/moon.png" alt="" />
+        </div>
+      </label>
+    </div>
+    <div class="container">
+      <div class="card input-wrapper">
+        <div class="from">
+          <span class="heading">From :</span>
+          <div class="dropdown-container" id="input-language">
+            <div class="dropdown-toggle">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span class="selected" data-value="auto">Auto Detect</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-menu">
+              <li class="option active">DropDown Menu Item 1</li>
+              <li class="option">DropDown Menu Item 2</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-area">
+          <textarea
+            id="input-text"
+            cols="30"
+            rows="10"
+            placeholder="Enter your text here"
+          ></textarea>
+          <div class="chars"><span id="input-chars">0</span> / 5000</div>
+        </div>
+        <div class="card-bottom">
+          <p>Or choose your document!</p>
+          <label for="upload-document">
+            <span id="upload-title">Choose File</span>
+            <ion-icon name="cloud-upload-outline"></ion-icon>
+            <input type="file" id="upload-document" hidden />
+          </label>
+        </div>
+      </div>
+
+      <div class="center">
+        <div class="swap-position">
+          <ion-icon name="swap-horizontal-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="card output-wrapper">
+        <div class="to">
+          <span class="heading">To :</span>
+          <div class="dropdown-container" id="output-language">
+            <div class="dropdown-toggle">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span class="selected" data-value="en">Englsih</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <ul class="dropdown-menu">
+              <li class="option active">DropDown Menu Item 1</li>
+              <li class="option">DropDown Menu Item 2</li>
+            </ul>
+          </div>
+        </div>
+        <textarea
+          id="output-text"
+          cols="30"
+          rows="10"
+          placeholder="Translated text will appear here"
+          disabled
+        ></textarea>
+        <div class="card-bottom">
+          <p>Download as a document!</p>
+          <button id="download-btn">
+            <span>Download</span>
+            <ion-icon name="cloud-download-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="footer">
+
+      <div class="box-container">
+  
+          <div class="box">
+              <h3>our locations</h3>
+              <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+              <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+              <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+              <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+              <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+          </div>
+  
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
+          </div>
+  
+          <div class="box">
+              <h3>extra links</h3>
+              <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+              <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+          </div>
+  
+          <div class="box">
+              <h3>contact info</h3>
+              <a href="#"> <i class="fas fa-phone"></i> +91 8853455765 </a>
+              <a href="#"> <i class="fas fa-phone"></i> +91 9140026484 </a>
+              <a href="#"> <i class="fas fa-envelope"></i> nikhilkhare212@gmail.com </a>
+              <img src="image/worldmap.png" class="map" alt="">
+          </div>
+          
+      </div>
+  
+      <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+      </div>
+  
+      <div class="credit"> created by <span> Nikhil Khare, Om Awadhiya, Omni rajoriya </span> | all rights reserved! </div>
+  
+  </section>
+  
+  <!-- footer section ends -->
+
+    <script src="script/languages.js"></script>
+    <script src="script/script.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="../../js/script.js"></script>
+  </body>
+</html>
